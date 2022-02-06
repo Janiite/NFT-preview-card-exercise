@@ -1,21 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
 }
 
 main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%);
 }
 
 .card {
-    height:60vh ;
-    width: 25vw;
-    background-color: hsl(216, 50%, 16%);
+  height: 75vh;
+  width: 23vw;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
 }
 
+.first-image {
+  width: 88%;
+  border-radius: 15px;
+}
+
+.information {
+  width: 88%;
+  text-align: start;
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.data {
+  width: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(215, 51%, 70%);
+}
+
+.cyan {
+  color: hsl(178, 100%, 50%);
+}
+
+.user {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  width: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: hsl(215, 51%, 70%);
+  padding: 15px;
+  font-weight: 300;
+}
+
+span {
+  color: hsl(0, 0%, 100%);
+}
+
+.second-image {
+  width: 15%;
+  height: auto;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 0px 15px 0px -15px;
+}
+
+span:hover,
+h1:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.first-image:hover {
+  filter: opacity(50%);
+}
